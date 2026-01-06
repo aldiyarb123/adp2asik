@@ -112,7 +112,7 @@ Response:
   "uptime_seconds": 42
 }
 
-
+``` 
  Thread Safety
 	•	All shared resources are protected using sync.Mutex
 	•	The in-memory database is isolated in a separate storage layer
@@ -173,4 +173,5 @@ Background worker
 Graceful shutdown
 Clean and professional architecture
 The solution is simple, reliable, and easy to maintain.
+
 
