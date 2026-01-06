@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a **concurrent web server** using the Go programming language and the standard `net/http` package.
 
@@ -23,7 +23,7 @@ The project demonstrates understanding of:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 assignment2/
 ├── cmd/
 │   └── server/
@@ -80,7 +80,7 @@ Stores key-value data in memory.
 }
 
 
-GET /data
+## GET /data
 
 Returns all stored data.
 
@@ -91,7 +91,7 @@ Response:
   "city": "Samara"
 }
 
-DELETE /data/{key}
+## DELETE /data/{key}
 
 Deletes a value by key.
 
@@ -100,7 +100,7 @@ Response:
 {
   "deleted": "name"
 }
-GET /stats
+## GET /stats
 
 Returns server statistics.
 
@@ -113,7 +113,7 @@ Response:
 }
 
 
-Thread Safety
+## Thread Safety
 	•	All shared resources are protected using sync.Mutex
 	•	The in-memory database is isolated in a separate storage layer
 	•	Request counters and server stats are accessed safely
@@ -121,7 +121,7 @@ Thread Safety
 
 
 
-Background Worker
+## Background Worker
 
 A background goroutine:
 	•	Starts when the server starts
@@ -130,7 +130,7 @@ A background goroutine:
 
 Implemented using time.Ticker and context.Context.
 
-Graceful Shutdown
+## Graceful Shutdown
 	•	OS signals (Ctrl + C) are captured
 	•	Active requests are allowed to complete
 	•	Background worker stops cleanly
@@ -139,7 +139,7 @@ Graceful Shutdown
 Implemented using signal.NotifyContext and http.Server.Shutdown.
 
 
-How to Run the Project
+## How to Run the Project
 
 1. Check Go version
 
@@ -163,7 +163,7 @@ curl http://localhost:8080/stats
 
 
 
-Conclusion
+## Conclusion
 
 This project fulfills all assignment requirements:
 
